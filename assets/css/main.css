@@ -3356,6 +3356,74 @@ body.theme-dark #titleBar .toggle:before {
 
 @media screen and (max-width: 736px) {
   #header {
-    right: -17em !important;
+    right: 0 !important;
+    left: auto !important;
+  }
+}
+
+/* Sidebar/mobile layout fixes */
+.image.avatar {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image.avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+#header > header .avatar {
+  max-width: 85%;
+}
+
+@media screen and (max-width: 1024px) {
+  #header {
+    left: auto !important;
+    right: 0 !important;
+    max-width: 85vw;
+    -moz-transform: translateX(100%) !important;
+    -webkit-transform: translateX(100%) !important;
+    -ms-transform: translateX(100%) !important;
+    transform: translateX(100%) !important;
+  }
+
+  body.header-visible #header {
+    -moz-transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+    -ms-transform: translateX(0) !important;
+    transform: translateX(0) !important;
+  }
+
+  body.header-visible #wrapper,
+  body.header-visible #titleBar {
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+
+  #titleBar .title {
+    overflow: hidden;
+    padding: 0 5em 0 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    width: 17em;
+    max-width: 85vw;
+  }
+
+  #header > header .avatar {
+    width: 8.5em;
+    margin-bottom: 1em;
   }
 }
