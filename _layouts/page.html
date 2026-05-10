@@ -4,67 +4,11 @@
 	Based on Read-only template released by html5up.
 	Free for personal and commercial use under the CCA 3.0 license
 -->
-<html lang="{{ site.lang | default: 'en' }}">
+<html>
 	<head>
-		{% assign seo_description = page.description | default: site.description | strip_html | strip_newlines | escape %}
-		{% assign seo_image = site.image | default: site.profile_image %}
-		{% assign seo_image_url = seo_image %}
-		{% unless seo_image contains '://' %}
-			{% assign seo_image_url = site.url | append: seo_image %}
-		{% endunless %}
-		<title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<title>{{site.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="{{ seo_description }}" />
-		<meta name="robots" content="index, follow" />
-		<link rel="canonical" href="{{ site.url }}{{ page.url | default: '/' }}" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="{{ site.title }}" />
-		<meta property="og:description" content="{{ seo_description }}" />
-		<meta property="og:url" content="{{ site.url }}{{ page.url | default: '/' }}" />
-		<meta property="og:image" content="{{ seo_image_url }}" />
-		<meta property="og:site_name" content="{{ site.title }}" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="{{ site.title }}" />
-		<meta name="twitter:description" content="{{ seo_description }}" />
-		<meta name="twitter:image" content="{{ seo_image_url }}" />
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "Person",
-			"name": "{{ site.name }}",
-			"url": "{{ site.url }}",
-			"image": "{{ site.url }}{{ site.profile_image }}",
-			"jobTitle": "Robotics AI Engineer",
-			"affiliation": {
-				"@type": "Organization",
-				"name": "Robot Innovation Hub"
-			},
-			"alumniOf": [
-				{
-					"@type": "CollegeOrUniversity",
-					"name": "Korea University"
-				},
-				{
-					"@type": "CollegeOrUniversity",
-					"name": "Seoul National University of Science and Technology"
-				}
-			],
-			"knowsAbout": [
-				"Robotics",
-				"Humanoid robot manipulation",
-				"Contact-rich manipulation",
-				"Long-horizon manipulation",
-				"Vision-language models",
-				"Multimodal large language models"
-			],
-			"sameAs": [
-				"https://github.com/{{ site.github }}",
-				"https://linkedin.com/in/{{ site.linkedin }}",
-				"https://scholar.google.com/{{ site.google_scholar }}"
-			]
-		}
-		</script>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
