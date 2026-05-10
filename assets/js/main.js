@@ -143,6 +143,12 @@
 					});
 				}
 
+			// Footer year.
+				var $currentYear = $('#currentYear');
+
+				if ($currentYear.length)
+					$currentYear.text(new Date().getFullYear());
+
 	});
 
 })(jQuery);

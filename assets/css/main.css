@@ -3442,3 +3442,39 @@ body.theme-dark #titleBar .toggle:before {
     margin-bottom: 1em;
   }
 }
+
+.profile-links {
+  margin: 0.75em 0 1.25em 0;
+}
+
+#header .profile-links .button {
+  background: #ffffff;
+  color: #002C5F !important;
+  height: 2.35em;
+  line-height: 2.35em;
+  padding: 0 1.35em;
+}
+
+#header .profile-links .button:hover {
+  background: #f2f6fb;
+  color: #002C5F !important;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 1.5em;
+}
+
+.media-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 736px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
