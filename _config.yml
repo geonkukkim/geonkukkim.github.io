@@ -21,7 +21,7 @@ work: >
 # Profile assets
 # - Replace the image and CV in these paths with your own files.
 profile_image: "/assets/images/avatar.jpg"
-cv_file: "/assets/files/CV.pdf"
+cv_file: "/assets/files/Geonkuk_Kim_CV_26_05_Physical_AI.pdf"
 
 # Navigation (one-page sections)
 nav1: "Home"
