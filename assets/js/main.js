@@ -128,17 +128,13 @@
     el.textContent = '';
 
     var words = text.split(' ');
-    var gradientIndexes = [];
-    words.forEach(function (w, i) {
-      var lower = w.toLowerCase().replace(/[^a-z]/g, '');
-      if (lower === 'geonkuk' || lower === "kim's" || lower === 'kims') gradientIndexes.push(i);
-    });
-
+    var GRADIENT = { geonkuk: true, kim: true, kims: true };
     words.forEach(function (word, i) {
+      var key = word.toLowerCase().replace(/[^a-z]/g, '');
       var span = document.createElement('span');
-      span.className = 'word' + (gradientIndexes.indexOf(i) !== -1 ? ' gradient' : '');
+      span.className = 'word' + (GRADIENT[key] ? ' gradient' : '');
       span.textContent = word;
-      span.style.animationDelay = (0.18 * i + 0.25) + 's';
+      span.style.animationDelay = (0.22 * i + 0.25) + 's';
       el.appendChild(span);
       if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
     });
