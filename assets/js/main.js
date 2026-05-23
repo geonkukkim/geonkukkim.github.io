@@ -132,9 +132,16 @@
     words.forEach(function (word, i) {
       var key = word.toLowerCase().replace(/[^a-z]/g, '');
       var span = document.createElement('span');
-      span.className = 'word' + (GRADIENT[key] ? ' gradient' : '');
-      span.textContent = word;
+      span.className = 'word';
       span.style.animationDelay = (0.22 * i + 0.25) + 's';
+      if (GRADIENT[key]) {
+        var inner = document.createElement('span');
+        inner.className = 'gradient';
+        inner.textContent = word;
+        span.appendChild(inner);
+      } else {
+        span.textContent = word;
+      }
       el.appendChild(span);
       if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
     });

@@ -313,7 +313,8 @@ body.theme-dark .hero::before {
   filter: blur(8px);
   animation: wordIn .85s cubic-bezier(.22, .85, .25, 1) forwards;
 }
-.hero-title .gradient {
+.hero-title .word .gradient {
+  display: inline-block;
   background: linear-gradient(120deg, var(--navy-3) 0%, var(--accent) 50%, var(--navy-3) 100%);
   -webkit-background-clip: text;
   background-clip: text;
