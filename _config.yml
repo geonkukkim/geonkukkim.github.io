@@ -9,7 +9,7 @@ name: "Geonkuk Kim"
 author: "Geonkuk Kim 📄"
 year: 2025
 lang: "en"
-url: "https://servingrobotmaster.github.io"
+url: "https://geonkukkim.github.io"
 description: "Geonkuk Kim is a Robotics AI Engineer with experience developing manipulation systems for high-DoF humanoid robots, with a focus on contact-rich and long-horizon tasks."
 image: "/assets/images/meta.png"
 
@@ -21,7 +21,7 @@ work: >
 # Profile assets
 # - Replace the image and CV in these paths with your own files.
 profile_image: "/assets/images/avatar.jpg"
-cv_file: "/assets/files/Geonkuk_Kim_CV_26_05_Physical_AI.pdf"
+cv_file: "/assets/files/Geonkuk_Kim_CV_26_06_Physical_AI.pdf"
 
 # Navigation (one-page sections)
 nav1: "Home"
@@ -35,7 +35,7 @@ nav7: "Others"
 # Social links (shown as icons in the left sidebar)
 # Use only what you want to show.
 linkedin: "geonkukkim"
-github: "servingrobotmaster"
+github: "geonkukkim"
 # For Google Scholar, put the path after https://scholar.google.com/
 # Example: citations?user=XXXXXXXXXXX&hl=en
 google_scholar: "citations?user=MyJJuzMAAAAJ&hl=ko"
