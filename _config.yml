@@ -10,13 +10,13 @@ author: "Geonkuk Kim 📄"
 year: 2025
 lang: "en"
 url: "https://geonkukkim.github.io"
-description: "Geonkuk Kim is a Robotics AI Engineer at COSMAX, developing cosmetics manufacturing robots, humanoid and dual-arm control, contact-based robot hand control, and VLA-based action planning."
+description: "Geonkuk Kim is a Physical AI Engineer at COSMAX, developing contact-rich cosmetics manufacturing robots, humanoid and dual-arm control, contact-based robot hand control, and VLA-based action planning."
 image: "/assets/images/meta.png"
 
 # Short tagline shown under the name in the left sidebar.
 # Research interests: 3D/2D Egocentric Vision, Robotic Manipulation, MLLMs
 work: >
-  COSMAX<br>Robotics &amp; AI R&amp;D
+  COSMAX<br>Physical AI R&amp;D
 
 # Profile assets
 # - Replace the image and CV in these paths with your own files.
