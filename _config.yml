@@ -16,7 +16,7 @@ image: "/assets/images/meta.png"
 # Short tagline shown under the name in the left sidebar.
 # Research interests: 3D/2D Egocentric Vision, Robotic Manipulation, MLLMs
 work: >
-  <a class="company-link cosmax-link" href="https://www.cosmax.com/en/" target="_blank" rel="noopener">COSMAX</a><br>Physical AI R&amp;D
+  <a class="company-link cosmax-link" href="https://www.cosmax.com/en/" target="_blank" rel="noopener">COSMAX</a><br>Physical AI
 
 # Profile assets
 # - Replace the image and CV in these paths with your own files.
