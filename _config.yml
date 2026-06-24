@@ -10,13 +10,13 @@ author: "Geonkuk Kim 📄"
 year: 2025
 lang: "en"
 url: "https://geonkukkim.github.io"
-description: "Geonkuk Kim is a Robotics AI Engineer with experience developing manipulation systems for high-DoF humanoid robots, with a focus on contact-rich and long-horizon tasks."
+description: "Geonkuk Kim is a Robotics AI Engineer at COSMAX, developing cosmetics manufacturing robots, humanoid and dual-arm control, contact-based robot hand control, and VLA-based action planning."
 image: "/assets/images/meta.png"
 
 # Short tagline shown under the name in the left sidebar.
 # Research interests: 3D/2D Egocentric Vision, Robotic Manipulation, MLLMs
 work: >
-  Open to opportunities<br>
+  COSMAX<br>Robotics &amp; AI R&amp;D
 
 # Profile assets
 # - Replace the image and CV in these paths with your own files.
@@ -40,4 +40,4 @@ github: "geonkukkim"
 # Example: citations?user=XXXXXXXXXXX&hl=en
 google_scholar: "citations?user=MyJJuzMAAAAJ&hl=ko"
 email: "ggk0929@gmail.com"
-location: "167, Songpa-daero, Songpa-gu, Seoul, Republic of Korea"
+location: "Pangyo, Seongnam, Republic of Korea"
