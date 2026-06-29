@@ -121,8 +121,11 @@ a:hover { color: var(--accent-2); }
   text-decoration-color: transparent;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
-  cursor: pointer;
+  cursor: default;
   transition: background .18s ease, color .18s ease, text-decoration-color .18s ease, box-shadow .18s ease;
+}
+a.company-link {
+  cursor: pointer;
 }
 .company-link:hover,
 .company-link:focus-visible {
@@ -135,11 +138,17 @@ a:hover { color: var(--accent-2); }
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
-.cosmax-link {
-  --company-hover-bg: rgba(234, 29, 34, 0.10);
-  --company-hover-color: #b51217;
-  --company-ring: rgba(234, 29, 34, 0.16);
-  color: #ea1d22;
+.c-company-link {
+  --company-hover-bg: rgba(15, 118, 110, 0.10);
+  --company-hover-color: #0f766e;
+  --company-ring: rgba(15, 118, 110, 0.16);
+  color: #0f766e;
+}
+body.theme-dark .c-company-link {
+  --company-hover-bg: rgba(45, 212, 191, 0.14);
+  --company-hover-color: #99f6e4;
+  --company-ring: rgba(45, 212, 191, 0.20);
+  color: #5eead4;
 }
 .wirobotics-link {
   --company-hover-bg: rgba(63, 142, 204, 0.12);
@@ -668,7 +677,6 @@ body.theme-dark .pillar:hover .pillar-icon { background: var(--accent); }
 .about-card .kv dd { color: var(--ink); font-weight: 500; }
 .about-card .kv dd a { color: var(--accent); }
 .about-card .kv dd a.company-link { color: inherit; }
-.about-card .kv dd a.company-link.cosmax-link { color: #ea1d22; }
 .about-card .kv dd a.company-link:hover,
 .about-card .kv dd a.company-link:focus-visible {
   color: var(--company-hover-color);
